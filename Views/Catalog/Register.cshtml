@@ -1,0 +1,106 @@
+
+@section Styles {
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+<link rel="stylesheet" href="/css/catalog/register.css">
+}
+
+<h3>Register your Car here</h3>
+
+<form>
+  <div class="form-group row">
+    <label for="make" class="col-4 col-form-label">Make</label> 
+    <div class="col-8">
+      <div class="input-group">
+        <div class="input-group-prepend">
+          <div class="input-group-text">
+            <i class="fa fa-automobile"></i>
+          </div>
+        </div> 
+        <input id="make" name="make" placeholder="Make" type="text" class="form-control">
+      </div>
+    </div>
+  </div>
+  <div class="form-group row">
+    <label for="model" class="col-4 col-form-label">Model</label> 
+    <div class="col-8">
+      <input id="model" name="model" placeholder="Model" type="text" class="form-control">
+    </div>
+  </div>
+  <div class="form-group row">
+    <label for="year" class="col-4 col-form-label">Year</label> 
+    <div class="col-8">
+      <input id="year" name="year" placeholder="Year" type="text" class="form-control">
+    </div>
+  </div>
+  <div class="form-group row">
+    <label for="miles" class="col-4 col-form-label">Miles</label> 
+    <div class="col-8">
+      <input id="miles" name="miles" placeholder="Miles" type="text" class="form-control">
+    </div>
+  </div>
+  <div class="form-group row">
+    <label for="color" class="col-4 col-form-label">Color</label> 
+    <div class="col-8">
+      <input id="color" name="color" placeholder="Color" type="text" class="form-control">
+    </div>
+  </div>
+  <div class="form-group row">
+    <label for="mpg" class="col-4 col-form-label">MPG</label> 
+    <div class="col-8">
+      <input id="mpg" name="mpg" required="required" placeholder="MPG" type="text" class="form-control">
+    </div>
+  </div>
+  <div class="form-group row">
+    <label for="category" class="col-4 col-form-label">Category</label> 
+    <div class="col-8">
+      <select id="category" name="category" class="custom-select" required="required">
+        <option value="sedan">Sedan</option>
+        <option value="Coupe">Coupe</option>
+        <option value="suv">SUV</option>
+      </select>
+    </div>
+  </div>
+  <div class="form-group row">
+    <label for="image" class="col-4 col-form-label">Image</label> 
+    <div class="col-8">
+      <input id="image" name="image" placeholder="Image" type="text" class="form-control">
+    </div>
+  </div>
+  <div class="form-group row">
+    <label class="col-4">Transmission</label> 
+    <div class="col-8">
+      <div class="custom-control custom-radio custom-control-inline">
+        <input name="isManual" id="isManual_0" type="radio" class="custom-control-input" value="true" required="required"> 
+        <label for="isManual_0" class="custom-control-label">Manual</label>
+      </div>
+      <div class="custom-control custom-radio custom-control-inline">
+        <input name="isManual" id="isManual_1" type="radio" class="custom-control-input" value="false" required="required"> 
+        <label for="isManual_1" class="custom-control-label">Automatic</label>
+      </div>
+    </div>
+  </div>
+  <div class="form-group row">
+    <label for="price" class="col-4 col-form-label">Price</label> 
+    <div class="col-8">
+      <div class="input-group">
+        <div class="input-group-prepend">
+          <div class="input-group-text">
+            <i class="fa fa-dollar"></i>
+          </div>
+        </div> 
+        <input id="price" name="price" placeholder="Price" type="text" class="form-control">
+      </div>
+    </div>
+  </div> 
+  <div class="form-group row">
+    <div class="offset-4 col-8">
+      <button type="button" id="btn-save" class="btn btn-secondary btn-lg btn-block" >Register</button>
+
+    </div>
+  </div>
+</form>
+
+
+@section Scripts {
+    <script src="/js/catalog/register.js"></script>
+}

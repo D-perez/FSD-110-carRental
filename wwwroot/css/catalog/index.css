@@ -1,0 +1,92 @@
+
+h2{
+    text-align: center;
+
+}
+#catalog-container{
+    display: grid;
+    display: grid;
+    grid-gap: 50px;
+    grid-template-columns: auto auto;
+    margin-top: 3rem;
+
+}
+
+.car{
+    display: flex;
+    flex-direction: column;
+    border-radius: 10px;
+    font-size: large;
+    color: rgba(0, 0, 0, 0.603);
+    background-color: rgba(10, 11, 14, 0.068);
+
+    width: 90%;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+
+}
+
+.car :hover{
+    cursor: pointer;
+}
+
+.car img{
+    
+    max-width: 450px;
+    min-height: 310px;
+}
+
+h2{
+    color: rgba(0, 0, 0, 0.603);
+}
+
+
+button{
+    border: 1px rgba(0, 0, 0, 0.178) solid;
+    border-radius: 5px;
+    width : 250px;
+}
+
+label{
+    text-align: center;
+}
+
+.price{
+    padding-top: 1rem;
+}
+
+.modal-dialog{
+    max-width: 900px;
+    
+}
+
+.modal-content{
+    width: 900px;
+    border-radius: 12px;
+    border:0;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+.modal-image{
+    width: 100%;
+}
+
+.modal-open .modal{
+    /* background-color: rgba(0, 0, 0, 0.774); */
+    background-color: rgba(255, 255, 255, 0.479);  
+    backdrop-filter: blur(25px);
+   
+
+}
+
+#btn-rent {
+    min-height: 72px;
+    margin-bottom: 1rem;
+}
+
+.modal-footer p{
+    text-align: center;
+    width: 100%;
+    border-left: green 10px solid;
+    background-color: rgba(1, 255, 43, 0.14);
+    border-radius: 10px;
+}
+
